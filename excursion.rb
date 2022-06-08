@@ -8,9 +8,16 @@ end
 
 def exp_0(num, times)
   return 1 if times == 0
-  num * exp(num, (times - 1))
+  num * exp_0(num, (times - 1))
 end
 
 def exp_1(num, times)
-  
+  return nil if num == 0 && times == 0
+  return 1 if times == 0
+  if times % 2 == 0
+    return 
+  else
+    return 
+  end
 end
+
